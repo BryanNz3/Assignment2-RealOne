@@ -1,4 +1,4 @@
-class Predator extends Maze{
+class Predator extends GameObject{
   
   PVector location;
   PVector velocity;
@@ -20,6 +20,8 @@ class Predator extends Maze{
     
   }
   
+  /////////////////////////////////////
+  
   void update(){
     
     velocity.add(acceleration);
@@ -28,12 +30,16 @@ class Predator extends Maze{
     acceleration.mult(0);
     
   }
+  /////////////////////////////////////
+  
   
   void applyForce(PVector force) {
     
     acceleration.add(force);
     
   }
+  
+  ////////////////////////////////////////////
   
   void seek(PVector target) {
     
@@ -46,6 +52,9 @@ class Predator extends Maze{
     
     
   }
+  
+  /////////////////////////////////////////////
+  
   
   void display() {
     
