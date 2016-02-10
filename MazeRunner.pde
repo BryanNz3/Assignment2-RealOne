@@ -11,6 +11,7 @@ void setup(){
 void draw(){
   
   menu.display();
+  menu.update();
   
   
 }

@@ -14,7 +14,7 @@ Menu(){
 }
 
 
-void draw()
+void update()
 {
 
   keyPressed();
