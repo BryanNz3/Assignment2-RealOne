@@ -1,4 +1,4 @@
-class Menu extends GameObject{
+class Menu {
   
   PImage header;
   
@@ -14,7 +14,7 @@ Menu(){
 }
 
 
-void update()
+void draw()
 {
 
   keyPressed();
@@ -160,19 +160,19 @@ void display() {
   fill(255);
   
   header = loadImage("header.png");
-  image(header, 150, 10, 200, 200);
+  image(header, width/2 -100, 10, 200, 200);
   
   
   textAlign(CENTER);
   textSize(14);
-  text("Press 1 For Beginner Level ", 250, 250);
+  text("Press 1 For Beginner Level ", width/2, 250);
   textAlign(CENTER);
-  text("Press 2 For Inermediate Level ", 250, 270);
+  text("Press 2 For Inermediate Level ", width/2, 270);
   textAlign(CENTER);
-  text("Press 3 For Challenger Level ", 250, 290);
+  text("Press 3 For Challenger Level ", width/2, 290);
   textAlign(CENTER);
   //
-  text("Press x to quit ", 250, 330);
+  text("Press x to quit ", width/2, 330);
   //
 } // func
 
