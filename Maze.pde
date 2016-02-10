@@ -3,9 +3,12 @@ class Maze extends GameObject{
   PImage maze;
   
   
-  Maze(){
+  
+  Maze(String lvl){
     
-    maze = loadImage("lvl1_maze.png");
+    String ab = "lvl1_maze.png";
+    
+    maze = loadImage(ab);
     
     
   }
