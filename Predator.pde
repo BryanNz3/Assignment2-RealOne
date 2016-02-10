@@ -71,7 +71,13 @@ class Predator extends GameObject{
     endShape(CLOSE);
     popMatrix();
     
-  
+  if(key == 'r'){
+    
+   
+    location.x = 0;
+    location.y = 0;
+    
+  }
   
 }
 

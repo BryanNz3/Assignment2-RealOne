@@ -183,9 +183,19 @@ void handleStateLevel_1() {
   
   String lvl = "lvl1_maze.png";
   
-  //if(Runner.lives == 0){
-  //  exit();
-  //}
+  Maze m = new Maze(lvl);
+  Predator pln = new Predator(0,0);
+  Runner plr = new Runner();
+  
+  m.display();
+  plr.display();
+  plr.update();
+  
+  pln.seek(plr.pos);
+  pln.update();
+  pln.display();
+    
+    
   
 
 } // func
@@ -197,10 +207,18 @@ void handleStateLevel_2() {
   
   String lvl = "lvl2_maze.png";
   
-  //if(Runner.lives == 0){
-  //  exit();
-  //}
-                   
+  Maze m = new Maze(lvl);
+  Predator pln = new Predator(0,0);
+  Runner plr = new Runner();
+  
+  m.display();
+  plr.display();
+  plr.update();
+  
+  pln.seek(plr.pos);
+  pln.update();
+  pln.display();
+  
    }
      
      
@@ -209,10 +227,19 @@ void handleStateLevel_3() {
   
   String lvl = "lvl3_maze.png";
   
-  //if(Runner.lives == 0){
-  //  exit();
-  //}
- 
+  
+  Maze m = new Maze(lvl);
+  Predator pln = new Predator(0,0);
+  Runner plr = new Runner();
+  
+  m.display();
+  plr.display();
+  plr.update();
+  
+  pln.seek(plr.pos);
+  pln.update();
+  pln.display();
+  
 } 
 
   

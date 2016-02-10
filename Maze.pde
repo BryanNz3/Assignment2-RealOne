@@ -2,13 +2,12 @@ class Maze extends GameObject{
   
   PImage maze;
   
-  
+  String ab;
   
   Maze(String lvl){
     
-    String ab = "lvl1_maze.png";
+    ab = lvl;
     
-    maze = loadImage(ab);
     
     
   }
@@ -18,7 +17,19 @@ class Maze extends GameObject{
 
   void display(){
     
+      maze = loadImage(ab);
+      color cb;
+      cb = 16711903;
+    
+    fill(cb);
+    
     image(maze, 0, 0, width, height);
+    
+    if(ab == "lvl1_maze.png"){
+    
+    ellipse(750,700,50,50);
+    
+  }
     
     
   }
